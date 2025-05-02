@@ -1,4 +1,4 @@
-import { AdviceGraph } from '@voluespark/spark.elements'
+import AdviceGraph from '../AdviceGraph'
 import { InfoText } from '../UI'
 import { SpotPriceAdviceDTO } from '@/pages/api/spot-prices/[area]/advice'
 import { texts } from './texts'

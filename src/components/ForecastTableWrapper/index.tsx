@@ -1,5 +1,5 @@
 import { ForecastAdviceDTO } from '@/pages/api/forecast/[area]/advice'
-import { ForecastTable } from '@voluespark/spark.elements'
+import ForecastTable from '../ForecastTable'
 import { InfoText } from '../UI'
 import { texts } from './texts'
 import { useTranslation } from '@/i18n'

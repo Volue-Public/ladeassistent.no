@@ -1,8 +1,6 @@
 export { default as AreaSelector } from './areaSelector'
 export { default as Button } from './button'
-export { default as ChargeNow } from './chargeNow'
 export { default as Dropdown } from './dropdown'
 export { default as SimpleDropdown } from './dropdown/SimpleDropdown'
 export { default as Icon } from './icon'
 export { default as InfoText } from './infoText'
-export { default as Spinner } from './spinner'

@@ -70,7 +70,6 @@ h4 {
 @media only screen and (max-width: 884px) {
     body {
         overflow-x: hidden;
-    } 
+    }
 }
 
-@import '@voluespark/spark.elements/build/index.css'

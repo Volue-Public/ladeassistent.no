@@ -1,0 +1,45 @@
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.bar {
+    fill: var(--bar-color, #d4d5d4);
+}
+
+.bar__now {
+    fill: var(--bar-color-active, rgba(74, 58, 255, 0.48));
+}
+
+.bar__optimal {
+    fill: var(--bar-color-active, #62a39e);
+}
+
+.bar__avoid {
+    fill: var(--bar-color-active, #e9b280);
+}
+
+.bar__worst {
+    fill: var(--bar-color-active, #f87060);
+}
+
+.axis__line {
+    stroke: var(--axis-seperator, #d4e7e0);
+}
+
+.axis__text {
+    user-select: none;
+    -webkit-user-select: none;
+    font-style: inherit;
+}
+
+.axis {
+    user-select: none;
+    -webkit-user-select: none;
+    font-size: var(--axis-bottom-font-size, 0.8rem);
+}
+
+.selection__disable {
+    user-select: none;
+    -webkit-user-select: none;
+}

@@ -10,11 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true
-      - name: Replace .npmrc
-        run: echo "${{ secrets.NPM_RC }}" > .npmrc
+      - uses: actions/checkout@v4
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1

@@ -1,0 +1,47 @@
+.wrapper {
+    width: 200px;
+    height: 200px; 
+    border: solid 4px #000;
+    border-radius: 50%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.price {
+    font-weight: 400;
+    font-size: 1.95rem;
+    margin: 0;
+}
+
+.time {
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.details {
+    font-weight: 400;
+    font-size: 0.64rem;
+    opacity: 0.66;
+    margin: 0;
+}
+
+.now {
+    border-color: var(--spark-elements-now, rgba(74, 58, 255, 0.48));
+}
+
+.optimal {
+    border-color: var(--spark-elements-optimal, #62A39E);
+}
+
+.avoid {
+    border-color: var(--spark-elements-avoid, #E9B280);
+}
