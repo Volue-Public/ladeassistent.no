@@ -37,7 +37,7 @@ export default function Footer() {
             </span>
             <div className={style.content}>
                 <Link href="/kontakt">{t(texts.contact)}</Link>
-                <Link href="https://github.com/VolueSpark/ladeassistent.no">
+                <Link href="https://github.com/Volue-Public/ladeassistent.no">
                     {t(texts.github)}
                 </Link>
                 <Link href="https://docs.voluespark.com/">{t(texts.docs)}</Link>
