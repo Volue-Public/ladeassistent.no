@@ -31,7 +31,9 @@ jobs:
         run: |
           node bin/generate-notice.js
           if [[ -n "$(git diff -- ATTRIBUTIONS.txt)" ]]; then
-              echo "Please update NOTICE.TXT file by running:
+              git status
+              git diff
+              echo "Please update ATTRIBUTIONS.txt file by running:
               node bin/generate-notice.js"
               exit 1
           fi
