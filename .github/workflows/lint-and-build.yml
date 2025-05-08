@@ -30,7 +30,7 @@ jobs:
       - name: Check notice file
         run: |
           node bin/generate-notice.js
-          if [[ -n "$(git status -s)" ]]; then
+          if [[ -n "$(git diff -- ATTRIBUTIONS.txt)" ]]; then
               echo "Please update NOTICE.TXT file by running:
               node bin/generate-notice.js"
               exit 1
