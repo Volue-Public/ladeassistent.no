@@ -1,6 +1,8 @@
 const fs = require('node:fs')
 const licenseChecker = require('license-checker')
 
+const noticeFile = 'ATTRIBUTIONS.txt'
+
 licenseChecker.init({ start: '.' }, (err, ret) => {
     if (err) {
         console.error('An error occured while checking licenses')
@@ -8,7 +10,7 @@ licenseChecker.init({ start: '.' }, (err, ret) => {
     }
     var fd = null
     try {
-        fd = fs.openSync('NOTICE.TXT', 'w')
+        fd = fs.openSync(noticeFile, 'w')
         fs.appendFileSync(
             fd,
             'NOTICE\n\nThis project includes third-party dependencies licensed under the following terms\n\n'
