@@ -1,5 +1,5 @@
-import fs from 'fs'
-import licenseChecker from 'license-checker'
+const fs = require('node:fs')
+const licenseChecker = require('license-checker')
 
 licenseChecker.init({ start: '.' }, (err, ret) => {
     if (err) {
