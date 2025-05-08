@@ -26,3 +26,11 @@ jobs:
       - run: yarn lint
       - run: yarn tsc --noEmit
       - run: yarn build
+
+      - name: Check notice file
+        run: |
+          node bin/generate-notice.js
+          if [[ -n "$(git status -s)" ]]; then
+              echo "Please update NOTICE.TXT file by running:\nnode bin/generate-notice.js"
+              exit 1
+          fi
