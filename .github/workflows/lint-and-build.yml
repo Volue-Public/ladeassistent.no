@@ -34,6 +34,7 @@ jobs:
               git status
               git diff
               echo "Please update ATTRIBUTIONS.txt file by running:
+              yarn install --check-files
               node bin/generate-notice.js"
               exit 1
           fi
