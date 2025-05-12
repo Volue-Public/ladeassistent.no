@@ -1,5 +1,5 @@
-import { Nunito_Sans, Quicksand } from "next/font/google"
-import { Krub } from "next/font/google"
+import { Nunito_Sans, Quicksand } from 'next/font/google'
+import { Krub } from 'next/font/google'
 
 export const nunitoSans = Nunito_Sans({
     subsets: ['latin'],
