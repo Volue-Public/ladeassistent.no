@@ -3,6 +3,7 @@ import {
     getOrRefreshAccessToken,
 } from '@/src/api/platform-client'
 import { ForecastAdvice, PriceArea, PriceUnit } from '@/src/api/types'
+import { isPriceArea } from '@/src/utils/priceArea.helper'
 import { NextApiRequest, NextApiResponse } from 'next'
 
 export type ForecastAdviceDTO = {
@@ -31,8 +32,15 @@ export default async function handler(
         return
     }
 
+    if (typeof area != 'string' || !isPriceArea(area)) {
+        res.status(400).json({ message: 'Invalid price area: ' + area })
+        return
+    }
+
+    const encodedArea = encodeURIComponent(area)
+
     const response = await fetch(
-        `${PLATFORM_API_URL}/smart/v1/prices/forecast/${area}/advice`,
+        `${PLATFORM_API_URL}/smart/v1/prices/forecast/${encodedArea}/advice`,
         {
             method: 'POST',
             headers: {
