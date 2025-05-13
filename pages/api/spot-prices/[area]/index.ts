@@ -3,6 +3,7 @@ import {
     getOrRefreshAccessToken,
 } from '@/src/api/platform-client'
 import { Price, PriceArea, PriceUnit } from '@/src/api/types'
+import { isPriceArea } from '@/src/utils/priceArea.helper'
 import { NextApiRequest, NextApiResponse } from 'next'
 
 export type SpotPricesDTO = {
@@ -27,16 +28,26 @@ export default async function handler(
         })
         return
     }
+    if (typeof area != 'string' || !isPriceArea(area)) {
+        res.status(400).json({ message: 'Invalid price area: ' + area })
+        return
+    }
 
-    const response = await fetch(
-        `${PLATFORM_API_URL}/smart/v1/prices/actual/${area}?Currency=${currency}&EnergyUnit=${energyUnit}&VATRate=${vatRate}`,
-        {
-            method: 'GET',
-            headers: {
-                Authorization: `Bearer ${token.token.access_token}`,
-            },
-        }
+    const url = new URL(
+        `${PLATFORM_API_URL}/smart/v1/prices/actual/${encodeURIComponent(area)}`
     )
+    url.searchParams.append('Currency', encodeURIComponent(String(currency)))
+    url.searchParams.append(
+        'EnergyUnit',
+        encodeURIComponent(String(energyUnit))
+    )
+    url.searchParams.append('VATRate', encodeURIComponent(String(vatRate)))
+    const response = await fetch(url, {
+        method: 'GET',
+        headers: {
+            Authorization: `Bearer ${token.token.access_token}`,
+        },
+    })
 
     if (!(response.status === 200)) {
         res.status(response.status).json({
