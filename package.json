@@ -13,11 +13,11 @@
         "@leile/lobo-t": "^1.0.5",
         "@react-hook/size": "^2.1.2",
         "@turf/boolean-point-in-polygon": "^6.5.0",
-        "@visx/visx": "^2.18.0",
+        "@visx/visx": "^3.12.0",
         "date-fns": "^2.29.3",
         "framer-motion": "^7.6.19",
         "next": "^13.0.0",
-        "react": "18.2.0",
+        "react": "^18.0.0",
         "react-dom": "18.2.0",
         "sass": "^1.56.1",
         "simple-oauth2": "^5.0.0",
@@ -26,7 +26,7 @@
     },
     "devDependencies": {
         "@types/node": "18.11.5",
-        "@types/react": "18.0.23",
+        "@types/react": "^18.0.0",
         "@types/react-dom": "18.0.7",
         "@types/simple-oauth2": "^5.0.3",
         "eslint": "8.26.0",
@@ -35,7 +35,7 @@
         "eslint-plugin-prettier": "^4.2.1",
         "license-checker": "^25.0.1",
         "prettier": "^2.7.1",
-        "typescript": "4.8.4"
+        "typescript": "^5.8.3"
     },
     "engines": {
         "node": ">=18.0.0 <=20.x"
