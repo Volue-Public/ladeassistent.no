@@ -124,7 +124,7 @@ export default function AdviceGraph({
                 isWithinInterval(parseISO(p.time), ai.interval)
             )?.adviceType,
         }))
-    }, [data, advice])
+    }, [data, adviceIntervals])
 
     useEffect(() => {
         if (data.length > 1) {
