@@ -9,14 +9,14 @@
         "lint": "next lint"
     },
     "dependencies": {
-        "@auth0/nextjs-auth0": "^1.9.2",
+        "@auth0/nextjs-auth0": "^4.5.1",
         "@leile/lobo-t": "^1.0.5",
         "@react-hook/size": "^2.1.2",
         "@turf/boolean-point-in-polygon": "^6.5.0",
         "@visx/visx": "^3.12.0",
         "date-fns": "^2.29.3",
         "framer-motion": "^7.6.19",
-        "next": "^13.0.0",
+        "next": "^15.3.2",
         "react": "^18.0.0",
         "react-dom": "18.2.0",
         "sass": "^1.56.1",
