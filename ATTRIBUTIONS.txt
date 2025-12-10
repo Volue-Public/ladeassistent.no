@@ -11325,7 +11325,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 --------------------------------------------------------------------------------
-js-yaml@4.1.0
+js-yaml@4.1.1
 
 LICENSE: MIT
 REPOSITORY: https://github.com/nodeca/js-yaml
