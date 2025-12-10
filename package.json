@@ -9,7 +9,7 @@
         "lint": "next lint"
     },
     "dependencies": {
-        "@auth0/nextjs-auth0": "^4.5.1",
+        "@auth0/nextjs-auth0": "^4.6.1",
         "@leile/lobo-t": "^1.0.5",
         "@react-hook/size": "^2.1.2",
         "@turf/boolean-point-in-polygon": "^6.5.0",

@@ -21,7 +21,7 @@ Summary of third-party licences:
 └─ (MIT OR CC0-1.0): 1
 
 --------------------------------------------------------------------------------
-@auth0/nextjs-auth0@4.5.1
+@auth0/nextjs-auth0@4.6.1
 
 LICENSE: MIT
 REPOSITORY: https://github.com/auth0/nextjs-auth0
