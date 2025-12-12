@@ -1737,7 +1737,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 --------------------------------------------------------------------------------
-@next/env@15.4.8
+@next/env@15.4.9
 
 LICENSE: MIT
 REPOSITORY: https://github.com/vercel/next.js
@@ -12893,7 +12893,7 @@ Copyright (c) 2012-2015 Lauri Rooden &lt;lauri@rooden.ee&gt;
 
 
 --------------------------------------------------------------------------------
-next@15.4.8
+next@15.4.9
 
 LICENSE: MIT
 REPOSITORY: https://github.com/vercel/next.js
