@@ -1737,7 +1737,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 --------------------------------------------------------------------------------
-@next/env@15.4.10
+@next/env@15.5.12
 
 LICENSE: MIT
 REPOSITORY: https://github.com/vercel/next.js
@@ -1758,7 +1758,7 @@ Documentation for `@next/eslint-plugin-next` can be found at:
 https://nextjs.org/docs/basic-features/eslint#eslint-plugin
 
 --------------------------------------------------------------------------------
-@next/swc-linux-x64-gnu@15.4.8
+@next/swc-linux-x64-gnu@15.5.12
 
 LICENSE: MIT
 REPOSITORY: https://github.com/vercel/next.js
@@ -1768,7 +1768,7 @@ REPOSITORY: https://github.com/vercel/next.js
 This is the **x86_64-unknown-linux-gnu** binary for `@next/swc`
 
 --------------------------------------------------------------------------------
-@next/swc-linux-x64-musl@15.4.8
+@next/swc-linux-x64-musl@15.5.12
 
 LICENSE: MIT
 REPOSITORY: https://github.com/vercel/next.js
@@ -12893,7 +12893,7 @@ Copyright (c) 2012-2015 Lauri Rooden &lt;lauri@rooden.ee&gt;
 
 
 --------------------------------------------------------------------------------
-next@15.4.10
+next@15.5.12
 
 LICENSE: MIT
 REPOSITORY: https://github.com/vercel/next.js
