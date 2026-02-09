@@ -12386,7 +12386,7 @@ licenses; we recommend you read them, as their terms may differ from the
 terms above.
 
 --------------------------------------------------------------------------------
-lodash@4.17.21
+lodash@4.17.23
 
 LICENSE: MIT
 REPOSITORY: https://github.com/lodash/lodash
