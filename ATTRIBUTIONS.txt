@@ -12581,7 +12581,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 --------------------------------------------------------------------------------
-minimatch@3.1.2
+minimatch@3.1.3
 
 LICENSE: ISC
 REPOSITORY: https://github.com/isaacs/minimatch
