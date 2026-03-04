@@ -2,7 +2,6 @@ name: Lint and Build
 
 permissions:
   contents: write
-  pull-requests: write
 
 on:
   pull_request:
@@ -24,12 +23,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out scripts
-        uses: actions/checkout@v5
+        uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
         with:
           ref: ${{ github.event.pull_request.head.ref || inputs.branch }}
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: "20"
           cache: "npm"
@@ -43,11 +42,13 @@ jobs:
         run: node bin/generate-notice.js
 
       - name: Commit attribution changes if needed
+        env:
+          BRANCH_REF: ${{ github.head_ref || inputs.branch }}
         run: |
           if [[ -n "$(git diff -- ATTRIBUTIONS.txt)" ]]; then
               git config user.name "github-actions[bot]"
               git config user.email "github-actions[bot]@users.noreply.github.com"
               git add ATTRIBUTIONS.txt
               git commit -m "Update ATTRIBUTIONS.txt"
-              git push origin HEAD:${{ github.head_ref || inputs.branch }}
+              git push origin "HEAD:$BRANCH_REF"
           fi
