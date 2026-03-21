@@ -9357,7 +9357,7 @@ SOFTWARE.
 
 
 --------------------------------------------------------------------------------
-flatted@3.3.3
+flatted@3.4.2
 
 LICENSE: ISC
 REPOSITORY: https://github.com/WebReflection/flatted
