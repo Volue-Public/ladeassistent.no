@@ -13601,7 +13601,7 @@ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 --------------------------------------------------------------------------------
-picomatch@2.3.1
+picomatch@2.3.2
 
 LICENSE: MIT
 REPOSITORY: https://github.com/micromatch/picomatch
