@@ -10195,7 +10195,7 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 --------------------------------------------------------------------------------
-immutable@5.1.2
+immutable@5.1.5
 
 LICENSE: MIT
 REPOSITORY: https://github.com/immutable-js/immutable-js
